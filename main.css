@@ -15,10 +15,13 @@
   --color-red-dark: #FF0000;
   --color-red-light: #f34141;
 
-  --color-black: hsl(0, 0%, 13%); 
+  /* --color-black: hsl(0, 0%, 13%); 
   --color-black-light: hsl(0, 0%, 18%);
-  --color-black-light-text: hsl(0, 0%, 27%);
+  --color-black-light-text: hsl(0, 0%, 27%); */
    
+  --color-black: hsl(0, 41%, 70%); 
+  --color-black-light: hsl(0, 28%, 32%);
+  --color-black-light-text: hsl(0, 0%, 27%);
 
   --two-col-layout: 2;
   --four-col-layout: 4;
@@ -507,8 +510,8 @@ body .section-memberships .memberships {
 } 
 
 body .section-memberships .memberships .title {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 6vh;
+  /* font-weight: 500; */
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -582,8 +585,8 @@ body .section-reviews .reviews {
   position: relative;
 }
 body .section-reviews .reviews .title {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 6vh;
+  /* font-weight: 500; */
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -795,7 +798,7 @@ body .section-footer .footer-box .footer-nav  {
 h3{
   font-size: 20px;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: normal;
 }
 
 body .section-footer .footer-box .footer-nav h3 {
