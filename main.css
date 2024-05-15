@@ -11,12 +11,15 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;900&family=Poppins&display=swap");
 :root {
-  --color-yellow: #e11717;
-  --color-yellow-dark: #FF0000;
-  --color-yellow-light: #f34141;
-  --color-black: hsl(0, 0%, 13%);
+  --color-red: #e11717;
+  --color-red-dark: #FF0000;
+  --color-red-light: #f34141;
+
+  --color-black: hsl(0, 0%, 13%); 
   --color-black-light: hsl(0, 0%, 18%);
   --color-black-light-text: hsl(0, 0%, 27%);
+   
+
   --two-col-layout: 2;
   --four-col-layout: 4;
   --three-col-layout: 3;
@@ -56,6 +59,8 @@ h1 {
   font-family: 'uni-sans', sans-serif; 
     font-size: 6vh;
     line-height: 90%;
+    margin: auto;
+    text-align: center;
 }
 h1::first-letter{
   color: red;
@@ -76,7 +81,7 @@ hr {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.9;
@@ -89,17 +94,47 @@ body .container {
 }
 
 body .container1 {
+  /* max-width: 500px; */
+  padding: 1.4rem 1.4rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+.container1 h2{
+  width: 800px;
+  margin: auto;
+}
+
+.container2 img{
+  width: 250px;
+}
+.container2{
   max-width: 500px;
   padding: 1.4rem 1.4rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
 }
+
+
+
+.container1 h1{
+  margin:auto;
+}
+
 
 body button {
   padding: 8px 10px;
   font-style: italic;
   text-transform: uppercase;
-  background-color: var(--color-yellow);
-  border: 2px solid var(--color-yellow);
+  background-color: var(--color-red);
+  border: 2px solid var(--color-red-dark);
   font-weight: 600;
   border-radius: 5px;
   margin-bottom: 5px;
@@ -182,7 +217,7 @@ body .header ul li {
   padding: 5px;
   overflow: hidden;
   font-size: 1.8rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 600;
   letter-spacing: 1.2px;
   cursor: pointer;
@@ -257,6 +292,7 @@ body .section-hero .hero-box h1 {
   font-family: 'uni-sans', sans-serif; 
     font-size: 10vw;
     line-height: 80%;
+    text-align: start;
   /* text-transform: uppercase; */
   /* font-size: clamp(2.5rem, 3vw, 3rem); */
   text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.7), 0px -4px 12px rgba(0, 0, 0, 0.5);
@@ -288,11 +324,12 @@ body .section-aboutus {
 body .section-aboutus .aboutus {
   overflow: hidden;
   padding: 3rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(var(--two-col-layout), minmax(min-content, 1fr));
+  display: flex;
+  /* grid-template-columns: repeat(var(--two-col-layout), minmax(min-content, 1fr));
   grid-row-gap: 0rem;
-  grid-column-gap: 5rem;
-  justify-content: center;
+  grid-column-gap: 5rem; */
+  justify-content:center ;
+  align-items: center;
   text-align: justify;
 }
 body .section-aboutus .aboutus .section-aboutus-images {
@@ -333,16 +370,39 @@ body .section-aboutus .aboutus .section-aboutus-images figure img:hover {
     transform: none;
   }
 }
+.goal-align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
 body .section-aboutus .aboutus .section-aboutus-info {
   display: flex;
   flex-direction: column;
 }
 body .section-aboutus .aboutus .section-aboutus-info h2{
-  margin-bottom: 1rem;
-  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 2rem;
+  /* text-transform: uppercase; */
 }
+.courosalbs h2{
+ 
+  margin: auto;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+body .section-aboutus .aboutus .section-aboutus-info h1{
+  margin: auto;
+  /* margin-bottom: 1rem; */
+  /* text-transform: uppercase; */
+}
+
 h2{
-  font-weight: 700;
+  line-height: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
   font-size: 25px;
 }
 
@@ -359,9 +419,11 @@ body .section-ourteam .ourteam .title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
 }
 .courosalbs{
-  padding: 110px;
+  padding: 70px;
 }
 
 /* body .section-ourteam .ourteam .team-members {
@@ -440,7 +502,13 @@ body .section-memberships .memberships {
   padding: 3rem 3rem;
   position: relative;
 }
+.section-memberships li{
+  font-weight: 900;
+} 
+
 body .section-memberships .memberships .title {
+  font-size: 30px;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -460,9 +528,10 @@ body .section-memberships .memberships .classes {
   }
 }
 body .section-memberships .memberships .classes .class {
-  border: #ffffff solid 2px;
+  border: #e11717 solid 10px;
+  border-radius: 5px;
   cursor: pointer;
-  background-color: #414141;
+  background-color: #bc2929;
   z-index: 10;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   display: flex;
@@ -471,6 +540,8 @@ body .section-memberships .memberships .classes .class {
   justify-content: space-between;
   transition: all 0.5s;
 }
+
+
 body .section-memberships .memberships .classes .class .class-name {
   padding: 1.5rem;
   margin-top: 10px;
@@ -511,6 +582,8 @@ body .section-reviews .reviews {
   position: relative;
 }
 body .section-reviews .reviews .title {
+  font-size: 30px;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -602,6 +675,7 @@ body .section-contact .contact .contactus {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   padding: 5rem 1rem;
 }
 body .section-contact .contact .contactus form {
@@ -718,6 +792,12 @@ body .section-footer .footer-box .footer-nav  {
 
   margin: 10px 0px;
 }
+h3{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 body .section-footer .footer-box .footer-nav h3 {
   margin: 10px 0px;
 }
@@ -793,3 +873,36 @@ body .section-footer .copyrights div {
     transform: translate(0);
   }
 }/*# sourceMappingURL=main.css.map */
+
+
+@media only screen and (max-width: 620px) {
+  .container2{
+    max-width: 500px;
+    padding: 1.4rem 1.4rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+  }
+  .container2 img{
+    width: 250px ;;
+  }
+
+  .container1 h2{
+    width: 100%;
+    margin: auto;
+  }
+  
+}
+
+@media only screen and (max-width: 861px) {
+ 
+
+  .container1 h2{
+    width: 100%;
+    margin: auto;
+  }
+  
+}
