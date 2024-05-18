@@ -1,5 +1,4 @@
 
-
 var movementStrength = 25;
 var height = movementStrength / window.screen.height;
 var width = movementStrength / window.screen.width;
