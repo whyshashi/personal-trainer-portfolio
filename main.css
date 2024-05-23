@@ -797,7 +797,7 @@ body .section-contact .contact .map iframe {
   height: 100%;
 }
 body .section-footer {
-  padding: clamp(4rem, 10vw, 8rem) 0;
+  padding-top: 80px;
   background-color: #161616;
 }
 body .section-footer .footer-box {
@@ -890,7 +890,7 @@ body .section-footer .copyrights {
   flex-direction: column;
 }
 body .section-footer .copyrights div {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 20px;
 }
 
@@ -983,6 +983,10 @@ body .section-footer .footer-box .contact-social-links{
     width: 290px;
     
   }
+  body .section-footer .copyrights div {
+    font-size: 1rem;
+    margin: 20px;
+  }
   
   
 }
@@ -1017,6 +1021,5 @@ body .section-footer .footer-box .contact-social-links{
   }
   body .section-reviews .reviews .review .review-info {
     width: 270px;
-    
   }
 }
