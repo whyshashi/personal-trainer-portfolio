@@ -543,7 +543,7 @@ body .section-memberships .memberships .classes {
 
 body .section-memberships .memberships .classes .class {
   height: 433px;
-  width: 325px;
+  width: 290px;
   border-radius: 15px;
   cursor: pointer;
   background-color: #FF3131;
@@ -637,12 +637,13 @@ body .section-reviews .reviews .review .review-info {
   box-shadow: 20px 20px #FF3131;
   padding-top: 30px;
   cursor: pointer;
+  border-radius: 15px;
 }
 
 
 body .section-reviews .reviews .review .review-info  img{
   width: 80%;
-  
+  border-radius: 15px;
 }
 
 
@@ -881,7 +882,8 @@ body .section-footer .footer-box .newsletter button {
   padding: 8px 20px;
 }
 body .section-footer .copyrights {
-  cursor: pointer;
+  /* margin-top: 20px; */
+  /* cursor: pointer; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -933,6 +935,11 @@ body .section-footer .copyrights div {
 
 
 @media only screen and (max-width: 620px) {
+
+  body .container1{
+    padding: 30px;
+  }
+  
   .container2{
     max-width: 500px;
     padding: 1.4rem 1.4rem;
@@ -943,6 +950,19 @@ body .section-footer .copyrights div {
     justify-content: center;
     gap: 36px;
   }
+
+  body .section-memberships .memberships {
+    padding: 0px;
+}
+body .section-reviews .reviews {
+  padding: 30px; 
+  position: relative;
+}
+
+body .section-footer .footer-box .contact-social-links{
+  gap: 10px;
+}
+
   .container2 img{
     width: 250px ;;
   }
@@ -960,7 +980,7 @@ body .section-footer .copyrights div {
     padding-top: 40px;
   }
   body .section-reviews .reviews .review .review-info {
-    width: 320px;
+    width: 290px;
     
   }
   
@@ -996,7 +1016,7 @@ body .section-footer .copyrights div {
     padding-top: 40px;
   }
   body .section-reviews .reviews .review .review-info {
-    width: 320px;
+    width: 270px;
     
   }
 }
