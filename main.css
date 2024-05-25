@@ -641,7 +641,7 @@ body .section-reviews .reviews .review .review-info {
 }
 
 
-body .section-reviews .reviews .review .review-info  img{
+.testimg{
   width: 80%;
   border-radius: 15px;
 }
