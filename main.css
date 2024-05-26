@@ -629,6 +629,7 @@ body .section-reviews .reviews .review {
 
 body .section-reviews .reviews .review .review-info {
   width: 420px;
+  height: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -981,7 +982,7 @@ body .section-footer .footer-box .contact-social-links{
   }
   body .section-reviews .reviews .review .review-info {
     width: 290px;
-    
+    height: auto;
   }
   body .section-footer .copyrights div {
     font-size: 1rem;
