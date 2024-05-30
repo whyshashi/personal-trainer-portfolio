@@ -636,7 +636,7 @@ body .section-reviews .reviews .review .review-info {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #212121;
+  background-color: #2E2E2E;
   box-shadow: 20px 20px #FF3131;
   padding-top: 30px;
   cursor: pointer;
@@ -984,6 +984,7 @@ body .section-footer .footer-box .contact-social-links{
     padding-top: 40px;
   }
   body .section-reviews .reviews .review .review-info {
+    /* border-radius: 20px; */
     width: 290px;
     height: auto;
   }
@@ -1032,3 +1033,4 @@ body .section-footer .footer-box .contact-social-links{
 .enquireme{
   color: #000;
 }
+
