@@ -650,7 +650,11 @@ body .section-reviews .reviews .review .review-info {
   width: 80%;
   border-radius: 15px;
 }
-
+.test-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 body .section-reviews .reviews .review .review-info  .commentss{
@@ -1030,6 +1034,8 @@ body .section-footer .footer-box .contact-social-links{
   body .section-reviews .reviews .review .review-info {
     width: 270px;
   }
+
+  
 }
 
 
@@ -1037,3 +1043,41 @@ body .section-footer .footer-box .contact-social-links{
   color: #000;
 }
 
+
+.containerln {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.cardln {
+  flex: 0 0 auto;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

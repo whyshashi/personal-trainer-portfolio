@@ -22,3 +22,4 @@ hero.addEventListener("mousemove", (e) => {
         div.remove();
     }, 250);
 });
+
