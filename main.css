@@ -1075,6 +1075,7 @@ body .section-footer .footer-box .contact-social-links{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #FF0000;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
