@@ -647,7 +647,7 @@ body .section-reviews .reviews .review .review-info {
 
 
 .testimg{
-  width: 80%;
+  width: 300px;
   border-radius: 15px;
 }
 .test-card{
@@ -1048,6 +1048,7 @@ body .section-footer .footer-box .contact-social-links{
   display: flex;
   overflow-x: auto;
   width: 100%;
+  gap: 10px;
 }
 
 .cardln {
