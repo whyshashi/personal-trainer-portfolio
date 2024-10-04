@@ -1048,7 +1048,7 @@ body .section-footer .footer-box .contact-social-links{
   display: flex;
   overflow-x: auto;
   width: 100%;
-  gap: 10px;
+  gap: 15px;
 }
 
 .cardln {
